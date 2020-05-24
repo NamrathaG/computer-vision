@@ -10,7 +10,7 @@ img_edges = img_smooth_edges;
 y_bins = 0:size(img_edges,1);
 x_bins = 0:size(img_edges,2);
  
-H = zeros(size(img_edges,1), size(img_edges,2));
+H = zeros(length(y_bins), length(x_bins));
 radius = 20;
 for r= 1: size(img_edges,1)
     for c= 1: size(img_edges,2)  
